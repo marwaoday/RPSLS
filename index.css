@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.choices {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.choice {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice img {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transform, duration, timing function, shadow effect duration, timing function */
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px rgba(170, 248, 142);
+  /* horizontal offset, vertical offset, blur radius, spread radius, color */
+  border-radius: 50%;
+}
+
+.result {
+  text-align: center;
+}
+
+.result-images {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#player-choice-img img,
+#computer-choice-img img {
+  width: 10rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#player-choice-img img:hover,
+#computer-choice-img img:hover {
+  transform: scale(1.2); /* Slightly enlarge the image when hovered over */
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+#game-result,
+#round-message {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#score,
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#player-choice-img,
+#computer-choice-img {
+  margin-top: 1rem;
+}
+
+#player-choice-img img,
+#computer-choice-img img {
+  width: 9rem;
+  height: auto;
+}
+
+#reset {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: none; /* Hidden initially */
+}
+
+#reset:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RPSLS Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="choices">
+        <button class="choice" id="rock">
+          <img src="images/rock.png" alt="Rock" />
+        </button>
+        <button class="choice" id="paper">
+          <img src="images/paper.png" alt="Paper" />
+        </button>
+        <button class="choice" id="scissors">
+          <img src="images/scissors.png" alt="Scissors" />
+        </button>
+        <button class="choice" id="lizard">
+          <img src="images/lizard.png" alt="Lizard" />
+        </button>
+        <button class="choice" id="spock">
+          <img src="images/spock.png" alt="Spock" />
+        </button>
+      </div>
+      <div class="result">
+        <h2 id="good-luck">Best out of 3! Good Luck!</h2>
+        <p id="round-message"></p>
+        <p id="game-result"></p>
+        <div class="result-images">
+          <div id="player-choice-img"></div>
+          <div id="computer-choice-img"></div>
+        </div>
+        <p id="score">YOU: 0 | Computer: 0</p>
+      </div>
+    </div>
+    <button id="reset" style="display: none">Reset Game</button>
+    <script src="index.js"></script>
+  </body>
+</html>
